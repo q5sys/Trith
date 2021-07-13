@@ -43,12 +43,10 @@ void MainWindow::on_decodePushButton_clicked()
 //decodefile
 //displaytext
 //savetemporiginalfile
-
 }
 
 void MainWindow::openImageFile(){
  imageFile = QFileDialog::getOpenFileName(this, tr("Open Image"), tr("Image File (*.png *.jpg *.bmp)"));
-
 }
 
 
@@ -75,14 +73,6 @@ void MainWindow::on_closePushButton_clicked(){
   // shred any files left
   //if no - cancel
 }
-
-//===========================================
-//  trith source code
-//  Copyright (c) 2021, q5sys
-//  Available under the MIT license
-//  See the LICENSE file for full details
-//===========================================
-
 
 void MainWindow::passPopup(QWidget parent) : QDialog(parent) {
 makePopup();
