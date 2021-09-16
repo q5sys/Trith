@@ -24,21 +24,23 @@ class MainWindow : public QMainWindow {
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    openImageFile();
-    QDialog makePopup();
-    QDialog passPopup();
+    void getImageFile();
+    void getKey();
+    void displayText();
+    void getSecretText();
+    void makeSecretText();
+    void doXor();
     QLineEdit linePassword;
     QLabel labelPassword;
-    QString password;
+    QString keypass, secretTextExtracted, decodedText, encodedText, tempImageFile;
     QFileDialog imageFile;
-    QDialogButtonBox buttons;
-    QString setPassword();
 
 private slots:
     void on_encodePushButton_clicked();
     void on_decodePushButton_clicked();
-    void on_plainTextEdit_textChanged();
     void on_closePushButton_clicked();
+
+    void on_updatePushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
