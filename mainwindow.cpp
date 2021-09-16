@@ -30,7 +30,6 @@ void MainWindow::on_encodePushButton_clicked(){
   encode(imageFile, encodedText);
 }
 
-
 void MainWindow::on_decodePushButton_clicked(){
   getImageFile();
   getKey();
@@ -116,5 +115,3 @@ void MainWindow::on_closePushButton_clicked(){
   shred(tempImageFile);
   //if no - cancel
 }
-
-

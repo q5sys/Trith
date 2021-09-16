@@ -12,8 +12,7 @@ SOURCES += \
     decode.cpp \
     encode.cpp \
     main.cpp \
-    mainwindow.cpp \
-    passPopup.cpp
+    mainwindow.cpp
 
 HEADERS += \
     mainwindow.h
